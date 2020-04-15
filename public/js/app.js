@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit',(e)=>{
             else
             {
                 
-                messageOne.textContent='the current temperature is '+data.forecast+' and the wind speed is '+data.windSpeed
+                messageOne.textContent='the current temperature is '+data.forecast+', the wind speed is '+data.windSpeed+' and humidity is '+data.humidity
 
             }
             

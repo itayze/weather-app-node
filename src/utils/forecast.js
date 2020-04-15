@@ -18,7 +18,8 @@ request({url,json:true},(error,{body})=>{
     {
         callback(undefined,{
             temperature:body.current.temperature,
-            windSpeed:body.current.wind_speed
+            windSpeed:body.current.wind_speed,
+            humidity:body.current.humidity
         })
     }
 
