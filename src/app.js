@@ -4,6 +4,7 @@ const path=require('path')
 const hbs=require('hbs')
 const geocode= require('./utils/geocode')
 const forecast= require ('./utils/forecast')
+const port = process.env.PORT || 3000
 
 
 //define paths for static and views
@@ -93,6 +94,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('server is running')
+app.listen(port,()=>{
+    console.log('server is running on '+port)
 })
